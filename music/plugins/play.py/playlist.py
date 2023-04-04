@@ -1,12 +1,3 @@
-#
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
-#
-# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
-#
-# All rights reserved.
-
 import os
 from random import randint
 
@@ -18,18 +9,18 @@ from pyrogram.types import (InlineKeyboardButton,
 from config import BANNED_USERS, SERVER_PLAYLIST_LIMIT
 from strings import get_command
 from strings.filters import command
-from YukkiMusic import Carbon, YouTube, app
-from YukkiMusic.utils.database import (delete_playlist, get_playlist,
+from AnonX import Carbon, YouTube, app
+from AnonX.utils.database import (delete_playlist, get_playlist,
                                        get_playlist_names,
                                        save_playlist)
-from YukkiMusic.utils.decorators.language import language, languageCB
-from YukkiMusic.utils.inline.playlist import (botplaylist_markup,
+from AnonX.utils.decorators.language import language, languageCB
+from AnonX.utils.inline.playlist import (botplaylist_markup,
                                               get_playlist_markup,
                                               warning_markup)
-from YukkiMusic.utils.pastebin import Yukkibin
-from YukkiMusic.utils.stream.stream import stream
+from AnonX.utils.pastebin import Anon
+from AnonX import stream
 
-# Command
+# Command 
 PLAYLIST_COMMAND = get_command("PLAYLIST_COMMAND")
 DELETEPLAYLIST_COMMAND = get_command("DELETEPLAYLIST_COMMAND")
 

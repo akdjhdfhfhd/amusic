@@ -1,16 +1,3 @@
-#
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
-#
-# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
-#
-# All rights reserved.
-#
-# This aeval and sh module is taken from < https://github.com/TheHamkerCat/WilliamButcherBot >
-# Credit goes to TheHamkerCat.
-#
-
 import os
 import re
 import subprocess
@@ -24,8 +11,8 @@ from pyrogram import filters
 from pyrogram.types import (InlineKeyboardButton,
                             InlineKeyboardMarkup, Message)
 
-from YukkiMusic import app
-from YukkiMusic.misc import SUDOERS
+from AnonX import app
+from AnonX.misc import SUDOERS
 
 
 async def aexec(code, client, message):

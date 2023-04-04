@@ -13,7 +13,7 @@ async def auto_leave():
         while not await asyncio.sleep(
             config.AUTO_LEAVE_ASSISTANT_TIME
         ):
-            from YukkiMusic.core.userbot import assistants
+            from AnonX.core.userbot import assistants
 
             for num in assistants:
                 client = await get_client(num)
@@ -57,7 +57,7 @@ async def auto_end():
                     continue
                 autoend[chat_id] = {}
                 try:
-                    await Yukki.stop_stream(chat_id)
+                    await Anon.stop_stream(chat_id)
                 except:
                     continue
                 try:

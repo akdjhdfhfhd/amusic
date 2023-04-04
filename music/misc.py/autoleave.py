@@ -1,19 +1,10 @@
-#
-# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
-#
-# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
-#
-# All rights reserved.
-
 import asyncio
 from datetime import datetime
 
 import config
-from YukkiMusic import app
-from YukkiMusic.core.call import Yukki, autoend
-from YukkiMusic.utils.database import (get_client, is_active_chat,
+from AnonX import app
+from AnonX.core.call import Anon, autoend
+from AnonX.utils.database import (get_client, is_active_chat,
                                        is_autoend)
 
 

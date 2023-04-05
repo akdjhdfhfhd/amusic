@@ -5,7 +5,7 @@ from config import BANNED_USERS
 from strings import get_command
 from strings.filters import command
 from AnonX import app
-from AnonX.core.call import Yukki
+from AnonX.core.call import AnonX
 from AnonX.utils.database import is_muted, mute_on
 from AnonX.utils.decorators import AdminRightsCheck
 

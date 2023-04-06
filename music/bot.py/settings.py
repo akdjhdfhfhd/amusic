@@ -6,8 +6,8 @@ from pyrogram.types import (CallbackQuery, InlineKeyboardButton,
 from config import (BANNED_USERS, CLEANMODE_DELETE_MINS,
                     MUSIC_BOT_NAME, OWNER_ID)
 from strings import get_command
-from YukkiMusic import app
-from YukkiMusic.utils.database import (add_nonadmin_chat,
+from AnonX import app
+from AnonX.utils.database import (add_nonadmin_chat,
                                        cleanmode_off, cleanmode_on,
                                        commanddelete_off,
                                        commanddelete_on,
@@ -24,13 +24,13 @@ from YukkiMusic.utils.database import (add_nonadmin_chat,
                                        save_video_bitrate,
                                        set_playmode, set_playtype,
                                        suggestion_off, suggestion_on)
-from YukkiMusic.utils.decorators.admins import ActualAdminCB
-from YukkiMusic.utils.decorators.language import language, languageCB
-from YukkiMusic.utils.inline.settings import (
+from AnonX.utils.decorators.admins import ActualAdminCB
+from AnonX.utils.decorators.language import language, languageCB
+from AnonX.utils.inline.settings import (
     audio_quality_markup, auth_users_markup,
     cleanmode_settings_markup, playmode_users_markup, setting_markup,
     video_quality_markup)
-from YukkiMusic.utils.inline.start import private_panel
+from AnonX.utils.inline.start import private_panel
 
 ### Command
 SETTINGS_COMMAND = get_command("SETTINGS_COMMAND")

@@ -8,7 +8,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.types import (InlineKeyboardButton,CallbackQuery,
                             InlineKeyboardMarkup, Message)
 
-from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
+from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
 
 AM_COMMAND = get_command("AM_COMMAND")
 

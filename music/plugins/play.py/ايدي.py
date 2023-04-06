@@ -1,20 +1,20 @@
 import asyncio
 import pyrogram
 from pyrogram import Client, filters
-from YukkiMusic import settingsApp
+from AnonX import settingsApp
 from strings import get_command
 from strings.filters import command
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
-from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
+from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
 from typing import Union
 from pyrogram.types import InlineKeyboardButton
 from config import LOG, LOG_GROUP_ID
-from YukkiMusic import app
-from YukkiMusic.utils.database import is_on_off
+from AnonX import app
+from AnonX.utils.database import is_on_off
 from config import GITHUB_REPO, SUPPORT_CHANNEL, SUPPORT_GROUP
-from YukkiMusic import app
+from AnonX import app
 from config import BANNED_USERS, MUSIC_BOT_NAME
-from YukkiMusic.misc import SUDOERS
+from AnonX.misc import SUDOERS
 import re
 import sys
 import os

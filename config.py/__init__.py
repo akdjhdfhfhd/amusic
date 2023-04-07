@@ -1,1 +1,2 @@
-from .config import *
+from .admins import *
+from .language import *

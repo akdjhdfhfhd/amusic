@@ -9,14 +9,14 @@ from pyrogram import Client, filters
 from config import BANNED_USERS
 from strings import get_command
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
-from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
+from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
 from datetime import datetime
 from sys import version_info
 from time import time
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
-from YukkiMusic import app
-from YukkiMusic import settingsApp
+from AnonX import app
+from AnonX import settingsApp
 from strings import get_command
 from strings.filters import command
 

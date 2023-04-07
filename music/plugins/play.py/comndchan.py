@@ -3,7 +3,7 @@ from pyrogram import Client, filters
 from strings import get_command
 from strings.filters import command
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
-from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
+from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
 
 
 @app.on_message(

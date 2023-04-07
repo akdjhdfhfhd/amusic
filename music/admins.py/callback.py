@@ -1,31 +1,43 @@
+import os
 import random
+import asyncio
 
 from pyrogram import filters
-from pyrogram.types import CallbackQuery, InlineKeyboardMarkup
+from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
 
+from strings import get_string
 from config import (AUTO_DOWNLOADS_CLEAR, BANNED_USERS,
                     SOUNCLOUD_IMG_URL, STREAM_IMG_URL,
-                    TELEGRAM_AUDIO_URL, TELEGRAM_VIDEO_URL, adminlist)
+                    TELEGRAM_AUDIO_URL, TELEGRAM_VIDEO_URL,
+                    MUSIC_BOT_NAME, adminlist)
 from AnonX import YouTube, app
-from AnonX.core.call import Yukki
+from AnonX.core.call import Anon
 from AnonX.misc import SUDOERS, db
-from AnonX.utils.database import (is_active_chat,
-                                       is_music_playing, is_muted,
-                                       is_nonadmin_chat, music_off,
-                                       music_on, mute_off, mute_on,
-                                       set_loop)
+from AnonX.utils import bot_sys_stats
+from AnonX.utils.database import (
+    get_active_chats,
+    get_lang,
+    is_active_chat,
+    is_music_playing,
+    is_nonadmin_chat,
+    music_off,
+    music_on,
+    set_loop,
+)
 from AnonX.utils.decorators.language import languageCB
 from AnonX.utils.formatters import seconds_to_min
-from AnonX.utils.inline.play import (panel_markup_1,
-                                          panel_markup_2,
-                                          panel_markup_3,
-                                          stream_markup,
-                                          telegram_markup)
+from AnonX.utils.inline import (
+    stream_markup,
+    stream_markup_timer,
+    telegram_markup,
+    telegram_markup_timer,
+    close_keyboard,
+)
 from AnonX.utils.stream.autoclear import auto_clean
 from AnonX.utils.thumbnails import gen_thumb
 
 wrong = {}
-
+checker = {}
 
 @app.on_callback_query(filters.regex("PanelMarkup") & ~BANNED_USERS)
 @languageCB

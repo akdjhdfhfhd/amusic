@@ -7,7 +7,7 @@ import wget
 import yt_dlp
 from strings.filters import command
 from pyrogram import Client, filters
-from YukkiMusic import app
+from AnonX import app
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from youtube_search import YoutubeSearch
 from yt_dlp import YoutubeDL

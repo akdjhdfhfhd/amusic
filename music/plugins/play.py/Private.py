@@ -6,7 +6,7 @@ from strings import get_command
 from strings.filters import command
 
 from pyrogram.types import Message , ReplyKeyboardMarkup , KeyboardButton
-from YukkiMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
+from AnonX import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
 
 #############################
 
